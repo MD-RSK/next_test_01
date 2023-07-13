@@ -1,5 +1,6 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
+{/*import PageTransition from 'components/ui/PageTransition';*/}
 import Header from 'components/base/Header';
 import Footer from 'components/base/Footer';
 
@@ -27,11 +28,11 @@ export default function RootLayout({
 */}
       </head>
       <body className={inter.className}>
-        <div className='flex min-h-screen flex-col items-center justify-between'>
-          <Header />
-          {children}
-          <Footer />
-        </div>
+          <div className='flex min-h-screen flex-col items-center justify-between'>
+            <Header />
+            {children}
+            <Footer />
+          </div>
       </body>
     </html>
   )
